@@ -1,0 +1,246 @@
+.dao-app {
+  padding: 1.25rem 1.5rem 3rem;
+  text-align: left;
+}
+
+.dao-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.dao-header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.dao-sub {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.dao-sub code {
+  font-size: 0.8rem;
+  word-break: break-all;
+}
+
+.dao-hint {
+  margin: 0 0 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  max-width: 52rem;
+}
+
+.dao-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.dao-search {
+  flex: 1;
+  min-width: 12rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+}
+
+.dao-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dao-muted {
+  color: var(--text);
+  opacity: 0.85;
+}
+
+.dao-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.dao-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dao-card-head h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.dao-pk {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.dao-desc {
+  margin: 0 0 0.75rem;
+  white-space: pre-wrap;
+  color: var(--text-h);
+}
+
+.dao-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+  align-items: center;
+  margin-bottom: 0.65rem;
+  font-size: 0.9rem;
+}
+
+.dao-badge {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.dao-badge.open {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--text-h);
+}
+
+.dao-badge.pending {
+  opacity: 0.9;
+}
+
+.dao-badge.done {
+  opacity: 0.75;
+}
+
+.dao-verdict {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.dao-voted {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.dao-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.dao-btn {
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text-h);
+  font: inherit;
+  cursor: pointer;
+}
+
+.dao-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.dao-btn.primary {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--text-h);
+}
+
+.dao-btn.yes {
+  border-color: rgba(34, 197, 94, 0.45);
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.dao-btn.no {
+  border-color: rgba(239, 68, 68, 0.45);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.dao-error {
+  color: #f87171;
+  font-size: 0.88rem;
+  margin: 0.35rem 0 0;
+}
+
+.dao-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.dao-modal {
+  width: min(100%, 26rem);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.dao-modal h2 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+}
+
+.dao-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.9rem;
+  color: var(--text-h);
+}
+
+.dao-field input,
+.dao-field textarea {
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+}
+
+.dao-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
