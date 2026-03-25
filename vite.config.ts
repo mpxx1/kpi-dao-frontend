@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 export default defineConfig({
   plugins: [react()],
+  base: "/kpi-dao-frontend",
   define: {
     global: 'globalThis',
     'process.env.NODE_ENV': JSON.stringify(

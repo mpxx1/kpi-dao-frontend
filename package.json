@@ -1,5 +1,6 @@
 {
   "name": "app",
+  "homepage": "https://mpxx1.github.io/kpi-dao-frontend/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
